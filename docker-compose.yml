@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  ubuntu:
+    container_name: ubuntu_test
+    build:
+      context: .
+    tty: true
+    volumes:
+      - .:/ubuntu
